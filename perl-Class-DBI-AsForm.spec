@@ -1,23 +1,23 @@
 #
 # Conditional build:
-# _with_tests	- do perform "make test"
-#
+%bcond_without	tests	# do not perform "make test"
+
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Class
 %define	pnam	DBI-AsForm
 Summary:	Produce HTML form elements for database columns
 Summary(pl):	Tworzenie pól formularzy HTML z kolumn baz danych
 Name:		perl-%{pdir}-%{pnam}
-Version:	1.1
+Version:	2.1
 Release:	1
 License:	Unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	92a3ff24592e338a844dd51de355acd9
+# Source0-md5:	96fa1c26b571e84fb47f633e252eda04
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-Class-DBI >= 0.94
-Requires:	perl(Class::DBI) >= 0.94
+Requires:	perl-Class-DBI >= 0.94
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -47,7 +47,7 @@ powi±zanej klasy.
 
 %{__make}
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
