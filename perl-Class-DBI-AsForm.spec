@@ -8,12 +8,12 @@
 Summary:	Produce HTML form elements for database columns
 Summary(pl):	Tworzenie pól formularzy HTML z kolumn baz danych
 Name:		perl-%{pdir}-%{pnam}
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	Unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	78c56252f32209f2b8eccaf6aa75c4af
+# Source0-md5:	92a3ff24592e338a844dd51de355acd9
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-Class-DBI >= 0.94
