@@ -11,7 +11,7 @@ Summary(pl):	Tworzenie pól formularzy HTML z kolumn baz danych
 Name:		perl-%{pdir}-%{pnam}
 Version:	2.2
 Release:	1
-License:	Unknown
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	09a3824bfbf260f2b12583828dce5068
