@@ -4,8 +4,8 @@
 %bcond_with	tests	# do perform "make test"
 
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Class
-%define	pnam	DBI-AsForm
+%define		pdir	Class
+%define		pnam	DBI-AsForm
 Summary:	Produce HTML form elements for database columns
 Summary(pl):	Tworzenie pól formularzy HTML z kolumn baz danych
 Name:		perl-Class-DBI-AsForm
