@@ -8,7 +8,7 @@
 %define	pnam	DBI-AsForm
 Summary:	Produce HTML form elements for database columns
 Summary(pl):	Tworzenie pól formularzy HTML z kolumn baz danych
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Class-DBI-AsForm
 Version:	2.2
 Release:	1
 License:	unknown
