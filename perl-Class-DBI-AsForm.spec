@@ -1,7 +1,6 @@
 #
 # Conditional build:
-# test is known to fail on version 2.2
-%bcond_with	tests	# do perform "make test"
+%bcond_without	tests	# do perform "make test"
 
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Class
@@ -9,12 +8,12 @@
 Summary:	Produce HTML form elements for database columns
 Summary(pl):	Tworzenie pól formularzy HTML z kolumn baz danych
 Name:		perl-Class-DBI-AsForm
-Version:	2.3
+Version:	2.41
 Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	158e2f3eb51f10bedbf36e5199802f9a
+# Source0-md5:	123ef74dd79a632b881189334cfa6827
 URL:		http://search.cpan.org/dist/Class-DBI-AsForm/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -22,6 +21,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-Class-DBI >= 0.94
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-Class-DBI-Plugin-Type
+BuildRequires:	perl-DBD-SQLite2
 %endif
 Requires:	perl-Class-DBI >= 0.94
 BuildArch:	noarch
