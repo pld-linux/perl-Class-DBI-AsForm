@@ -9,12 +9,13 @@
 Summary:	Produce HTML form elements for database columns
 Summary(pl):	Tworzenie pól formularzy HTML z kolumn baz danych
 Name:		perl-Class-DBI-AsForm
-Version:	2.2
+Version:	2.3
 Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	09a3824bfbf260f2b12583828dce5068
+# Source0-md5:	158e2f3eb51f10bedbf36e5199802f9a
+URL:		http://search.cpan.org/dist/Class-DBI-AsForm/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
