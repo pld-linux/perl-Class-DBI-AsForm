@@ -31,11 +31,12 @@ with objects from the joined class.
 
 %description -l pl
 Modu³ ten u³atwia generowanie formularzy HTML tworz±cych nowe wiersze
-bazy danych lub edytuj±cych istniej±ce wiersze. Odwzorowuje od w
-okre¶lony sposób nazwy kolumn bazy danych na elementy formularza HTML.
-Du¿e pola tekstowe s± przekszta³cane na wielowierszowe pola tekstowe
-(textarea), a pola posiadaj±ce zwi±zki z innymi tabelami Class::DBI s±
-przekszta³cane w pola wyboru wype³nione obiektami powi±zanej klasy.
+bazy danych lub edytuj±cych istniej±ce wiersze. Odwzorowuje
+w okre¶lony sposób nazwy kolumn bazy danych na elementy formularza
+HTML.  Du¿e pola tekstowe s± przekszta³cane na wielowierszowe pola
+tekstowe (textarea), a pola posiadaj±ce zwi±zki z innymi tabelami
+Class::DBI s± przekszta³cane w pola wyboru wype³nione obiektami
+powi±zanej klasy.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
