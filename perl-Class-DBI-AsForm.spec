@@ -8,20 +8,20 @@
 Summary:	Produce HTML form elements for database columns
 Summary(pl):	Tworzenie pól formularzy HTML z kolumn baz danych
 Name:		perl-Class-DBI-AsForm
-Version:	2.41
+Version:	2.42
 Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	123ef74dd79a632b881189334cfa6827
+# Source0-md5:	5799ef3305aff13b911b2f13f36951f5
 URL:		http://search.cpan.org/dist/Class-DBI-AsForm/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Class-DBI >= 0.94
-BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-Class-DBI-Plugin-Type
 BuildRequires:	perl-DBD-SQLite2
+BuildRequires:	perl-HTML-Tree
 %endif
 Requires:	perl-Class-DBI >= 0.94
 BuildArch:	noarch
@@ -37,12 +37,11 @@ with objects from the joined class.
 
 %description -l pl
 Modu³ ten u³atwia generowanie formularzy HTML tworz±cych nowe wiersze
-bazy danych lub edytuj±cych istniej±ce wiersze. Odwzorowuje
-w okre¶lony sposób nazwy kolumn bazy danych na elementy formularza
-HTML.  Du¿e pola tekstowe s± przekszta³cane na wielowierszowe pola
-tekstowe (textarea), a pola posiadaj±ce zwi±zki z innymi tabelami
-Class::DBI s± przekszta³cane w pola wyboru wype³nione obiektami
-powi±zanej klasy.
+bazy danych lub edytuj±cych istniej±ce wiersze. Odwzorowuje w
+okre¶lony sposób nazwy kolumn bazy danych na elementy formularza HTML.
+Du¿e pola tekstowe s± przekszta³cane na wielowierszowe pola tekstowe
+(textarea), a pola posiadaj±ce zwi±zki z innymi tabelami Class::DBI s±
+przekszta³cane w pola wyboru wype³nione obiektami powi±zanej klasy.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
