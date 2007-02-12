@@ -6,7 +6,7 @@
 %define		pdir	Class
 %define		pnam	DBI-AsForm
 Summary:	Produce HTML form elements for database columns
-Summary(pl):	Tworzenie pól formularzy HTML z kolumn baz danych
+Summary(pl.UTF-8):   Tworzenie pÃ³l formularzy HTML z kolumn baz danych
 Name:		perl-Class-DBI-AsForm
 Version:	2.42
 Release:	1
@@ -36,13 +36,13 @@ are turned into textareas, and fields with a has-a relationship to
 other Class::DBI tables are turned into select drop-downs populated
 with objects from the joined class.
 
-%description -l pl
-Modu³ ten u³atwia generowanie formularzy HTML tworz±cych nowe wiersze
-bazy danych lub edytuj±cych istniej±ce wiersze. Odwzorowuje w
-okre¶lony sposób nazwy kolumn bazy danych na elementy formularza HTML.
-Du¿e pola tekstowe s± przekszta³cane na wielowierszowe pola tekstowe
-(textarea), a pola posiadaj±ce zwi±zki z innymi tabelami Class::DBI s±
-przekszta³cane w pola wyboru wype³nione obiektami powi±zanej klasy.
+%description -l pl.UTF-8
+ModuÅ‚ ten uÅ‚atwia generowanie formularzy HTML tworzÄ…cych nowe wiersze
+bazy danych lub edytujÄ…cych istniejÄ…ce wiersze. Odwzorowuje w
+okreÅ›lony sposÃ³b nazwy kolumn bazy danych na elementy formularza HTML.
+DuÅ¼e pola tekstowe sÄ… przeksztaÅ‚cane na wielowierszowe pola tekstowe
+(textarea), a pola posiadajÄ…ce zwiÄ…zki z innymi tabelami Class::DBI sÄ…
+przeksztaÅ‚cane w pola wyboru wypeÅ‚nione obiektami powiÄ…zanej klasy.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
