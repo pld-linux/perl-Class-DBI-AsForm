@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do perform "make test"
 
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Class
 %define		pnam	DBI-AsForm
 Summary:	Produce HTML form elements for database columns
